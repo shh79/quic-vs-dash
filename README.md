@@ -132,7 +132,7 @@ iperf3 -s
 Run the test runner on `c1` (client):
 
 ```bash
-python3 streaming/test_runner.py --netem-config <configuration>
+python3 streaming/test_runner.py
 ```
 The `test_runner.py` script will configure the link between `c1` and the router, set up background traffic using `iperf3` rules, and then run both the QUIC and DASH clients (`quic-client.py` and `dash-client.py`) to request the video streams from their respective servers.
 
